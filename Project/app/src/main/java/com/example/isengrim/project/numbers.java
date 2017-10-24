@@ -19,9 +19,9 @@ import java.util.Random;
 public class numbers extends AppCompatActivity {
 
 
-    Button ok;
-    TextView generated_number;
-    EditText write;
+    Button ok, b1, b2, b3, b4, b5, b6, b7, b8, b9, bC;
+    TextView generated_number, inform;
+
     int steering = 0;
     int length = 3;
     String number = intarray2string(random_number(length));
@@ -30,51 +30,81 @@ public class numbers extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
 
+
         final Button ok = (Button) findViewById(R.id.ok);
         final TextView generated_number = (TextView) findViewById(R.id.generated_number);
-        final EditText write = (EditText) findViewById(R.id.write);
+        final TextView inform = (TextView) findViewById(R.id.inform);
         generated_number.setText(number);
-
+        inform.setText("Rozgrywka została rozpoczeta. Proszę zapamiętać podaną liczbę.");
         ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(steering==0)
                 {
-                    ok.setText("Send");
-                    write.setVisibility(View.VISIBLE);
-                    generated_number.setText("Type remembered number");
-
-                    //wyciąganie klawiatury
-                    try {
-                        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-                        imm.showSoftInput(write, InputMethodManager.SHOW_IMPLICIT);
-                    } catch(Exception e){}
-                    //
+                    ok.setText("Sprawdź");
+                    generated_number.setText("");
+                    inform.setText("Proszę wpisać zapamiętaną liczbę.");
                     steering=1;
 
                 }
+
                 else
                 {
-                    ok.setText("Ready");
-
-                    check(number,write.getText().toString());
-                    //Chowanie klawiatury
-                    try  {
-                        InputMethodManager imm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
-                        imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
-                    } catch (Exception e) {}
-                    //
-                    write.setVisibility(View.GONE);
+                    ok.setText("Gotów");
+                    check(generated_number.getText().toString(),number);
                     number = intarray2string(random_number(length));
+
                     generated_number.setText(number);
-                    write.setText("");
+
                     steering=0;
                 }
             }
 
         });
     }
-
+    public void ButtonClicked(View view) {
+        TextView generated_number = (TextView) findViewById(R.id.generated_number);
+        if (steering==1) {
+            switch (view.getId()) {
+                case R.id.b1:
+                    generated_number.append("1");
+                    break;
+                case R.id.b2:
+                    generated_number.append("2");
+                    break;
+                case R.id.b3:
+                    generated_number.append("3");
+                    break;
+                case R.id.b4:
+                    generated_number.append("4");
+                    break;
+                case R.id.b5:
+                    generated_number.append("5");
+                    break;
+                case R.id.b6:
+                    generated_number.append("6");
+                    break;
+                case R.id.b7:
+                    generated_number.append("7");
+                    break;
+                case R.id.b8:
+                    generated_number.append("8");
+                    break;
+                case R.id.b9:
+                    generated_number.append("9");
+                    break;
+                case R.id.b0:
+                    generated_number.append("0");
+                    break;
+                case R.id.bC:
+                    int length = generated_number.getText().length();
+                    if (length > 0) {
+                        generated_number.setText(generated_number.getText().toString().substring(0, generated_number.getText().length() - 1));
+                    }
+                    break;
+            }
+        }
+        }
 
     public int[] random_number(int length)
     {
@@ -100,12 +130,15 @@ public class numbers extends AppCompatActivity {
 
     public boolean check(String generated_number, String typed_number)
     {
+        TextView inform = (TextView) findViewById(R.id.inform);
         if(generated_number.equals(typed_number)) {
             length++;
+            inform.setText("Liczba została poprawnie zapamiętana, oto kolejna:");
             return true;
         }
         else
         {
+            inform.setText("Liczba nie została poprawnie zapamiętana, oto kolejna:");
             return false;
         }
     }
