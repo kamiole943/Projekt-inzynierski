@@ -147,12 +147,13 @@ public class numbers extends AppCompatActivity {
 
                     ArrayList<String> result = data
                             .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-                    if( isValidInteger(result.get(0))) {
-                        generated_number.setText(result.get(0));
+                    Log.e("result",result.get(0).toString());
+                    if( isValidInteger(result.get(0).toString().replaceAll(" ",""))) {
+                        generated_number.setText(result.get(0).toString().replaceAll(" ",""));
                     }
                     else
                     {
-                        Toast.makeText(getApplicationContext(),"Liczba została nieprawnie wypowiedziana",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Liczba nie została poprawnie wypowiedziana",Toast.LENGTH_SHORT).show();
                     }
                 }
                 break;

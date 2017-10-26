@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_numbers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.isengrim.project.numbers">
+
+    <TextView
+        android:id="@+id/Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="27dp"
+        android:text="Menu główne"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/Gra"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="Rozpocznij grę" />
+
+    <Button
+        android:id="@+id/Opcje"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Opcje"
+        android:layout_below="@+id/Gra"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/Instrukcja"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Opcje"
+        android:layout_alignStart="@+id/Opcje"
+        android:layout_below="@+id/Opcje"
+        android:layout_marginTop="25dp"
+        android:text="Instrukcja" />
+</RelativeLayout>
