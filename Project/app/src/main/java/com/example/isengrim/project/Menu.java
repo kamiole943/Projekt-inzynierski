@@ -24,5 +24,25 @@ public class Menu extends AppCompatActivity {
 
         });
 
+        final Button Samouczek = (Button) findViewById(R.id.Samouczek);
+        Samouczek.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getBaseContext(), Tutorial.class);
+                startActivity(i);
+            }
+
+        });
+
+        final Button Opcje = (Button) findViewById(R.id.Opcje);
+        Opcje.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getBaseContext(), Options.class);
+                startActivity(i);
+            }
+
+        });
+
     }
 }

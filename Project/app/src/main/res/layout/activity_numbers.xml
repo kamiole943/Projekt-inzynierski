@@ -15,10 +15,14 @@
         android:id="@+id/generated_number"
         android:layout_width="match_parent"
         android:layout_height="80dp"
+        android:layout_above="@+id/b8"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/inform"
         android:clickable="false"
+        android:maxLines="30"
+        android:scrollbars="vertical"
+
         android:textSize="36sp" />
 
     <Button

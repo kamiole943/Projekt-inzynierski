@@ -6,12 +6,15 @@ import android.content.Intent;
 import android.speech.RecognizerIntent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -40,20 +43,24 @@ public class numbers extends AppCompatActivity {
 
         final Button ok = (Button) findViewById(R.id.ok);
         final TextView generated_number = (TextView) findViewById(R.id.generated_number);
+        generated_number.setMovementMethod(new ScrollingMovementMethod());
         final TextView inform = (TextView) findViewById(R.id.inform);
         final ImageButton bvoice = (ImageButton) findViewById(R.id.bvoice);
 
         generated_number.setText(number);
+        ivisibility(true);
 
         inform.setText("Rozgrywka została rozpoczeta. Proszę zapamiętać podaną liczbę.");
         ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                generated_number.scrollTo(0,0);
                 if(steering==0)
                 {
                     ok.setText("Sprawdź");
                     generated_number.setText("");
                     inform.setText("Proszę wpisać zapamiętaną liczbę.");
+                    ivisibility(false);
                     steering=1;
 
                 }
@@ -65,7 +72,7 @@ public class numbers extends AppCompatActivity {
                     number = intarray2string(random_number(length));
 
                     generated_number.setText(number);
-
+                   ivisibility(true);
                     steering=0;
                 }
             }
@@ -163,7 +170,7 @@ public class numbers extends AppCompatActivity {
     }
 
 
-    public int[] random_number(int length)
+    public static int[] random_number(int length)
     {
         int[] number = new int[length];
 
@@ -176,7 +183,7 @@ public class numbers extends AppCompatActivity {
         return number;
     }
 
-    public String intarray2string(int[] table)
+    public static String intarray2string(int[] table)
     {
         String str="";
         for (int i=0;i<table.length;i++) {
@@ -185,7 +192,7 @@ public class numbers extends AppCompatActivity {
         return str;
     }
 
-    public boolean check(String generated_number, String typed_number)
+    protected boolean check(String generated_number, String typed_number)
     {
         TextView inform = (TextView) findViewById(R.id.inform);
         if(generated_number.equals(typed_number)) {
@@ -199,7 +206,7 @@ public class numbers extends AppCompatActivity {
             return false;
         }
     }
-    public static Boolean isValidInteger(String value) {
+    protected static Boolean isValidInteger(String value) {
         try {
             Integer val = Integer.valueOf(value);
             if (val != null)
@@ -208,6 +215,46 @@ public class numbers extends AppCompatActivity {
                 return false;
         } catch (NumberFormatException e) {
             return false;
+        }
+    }
+
+    protected void ivisibility(boolean off)
+    {
+
+        if(off) {
+            for (int i = 0; i<= 9; i++) {
+                int id = getResources().getIdentifier("b" + i, "id", getPackageName());
+                Button tmp = (Button) findViewById(id);
+                tmp.setVisibility(View.INVISIBLE);
+
+            }
+            Button C = (Button)findViewById(R.id.bC);
+            C.setVisibility(View.INVISIBLE);
+            ImageButton Voice = (ImageButton)findViewById(R.id.bvoice);
+            Voice.setVisibility(View.INVISIBLE);
+            TextView generated_number = (TextView) findViewById(R.id.generated_number);
+            generated_number.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL);
+        Button ok=(Button)findViewById(R.id.ok);
+            //ok.setWidth(FrameLayout.LayoutParams.WRAP_CONTENT);
+            //ok.setWidth(500);
+        }
+        else {
+            for (int i = 0; i <= 9; i++) {
+                int id = getResources().getIdentifier("b" + i, "id", getPackageName());
+                Button tmp = (Button) findViewById(id);
+                tmp.setVisibility(View.VISIBLE);
+
+
+            }
+            Button C = (Button)findViewById(R.id.bC);
+            C.setVisibility(View.VISIBLE);
+            ImageButton Voice = (ImageButton)findViewById(R.id.bvoice);
+            Voice.setVisibility(View.VISIBLE);
+            TextView generated_number = (TextView) findViewById(R.id.generated_number);
+            generated_number.setGravity(Gravity.TOP);
+            Button ok = (Button) findViewById(R.id.ok);
+           // ok.setWidth(120);
+
         }
     }
 }
