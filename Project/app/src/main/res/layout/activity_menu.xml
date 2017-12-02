@@ -53,4 +53,16 @@
         android:layout_below="@+id/Opcje"
         android:layout_marginTop="25dp"
         android:text="Samouczek" />
+
+    <Button
+        android:id="@+id/Wyniki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Samouczek"
+        android:layout_alignLeft="@+id/Samouczek"
+        android:layout_alignRight="@+id/Samouczek"
+        android:layout_alignStart="@+id/Samouczek"
+        android:layout_below="@+id/Samouczek"
+        android:layout_marginTop="25dp"
+        android:text="Wyniki" />
 </RelativeLayout>

@@ -18,6 +18,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -35,9 +36,9 @@ public class Tutorial extends numbers {
         TextView generated_number, inform;
         ImageButton bvoice;
         int steering = 0;
-        int length = 3;
+
         int step = 0;
-        String number = intarray2string(random_number(length));
+
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -95,29 +96,33 @@ public class Tutorial extends numbers {
                         break;
                     case 3:
 
-                        inform.setText("Teraz nauczymy się korzystać z wprowadzania głosowego. Przycisk odpowiedzialny za to został ukazany poniżej. Aby przejść dalej proszę wyrazić gotowość.");
-                        Voice.setVisibility(View.VISIBLE);
+                        inform.setText("Teraz nauczymy się korzystać z wprowadzania głosowego. Służy temu przycisk z wizerunkiem mikrofonu.");
+
                         step=4;
                         break;
                     case 4:
-                        inform.setText("Jak widać, wygenerowany ciąg cyfr zwiększył się o jedną cyfrę. Tak będzie działo się za każdym razem, gdy zostanie poprawnie zapamiętany poprzedni ciąg. Przy każdej błędnej odpowiedzi zostanie utracona szansa. Liczbę szans można ustalić w opcjach. Proszę zapamiętać podany ciąg i wyrazić gotowość aby przejść dalej.");
-                        Voice.setVisibility(View.INVISIBLE);
+                        inform.setText("Jak widać, wygenerowany ciąg cyfr zwiększył się o jedną cyfrę. Tak będzie działo się za każdym razem, gdy zostanie poprawnie zapamiętany poprzedni ciąg.");
+
                         generated_number.setText("5647");
                         step=5;
                         break;
                     case 5:
-                        steering=setup(steering);
-                        inform.setText("Proszę wprowadzić zapamiętaną liczbę, tym razem z użyciem wprowadzania głosowego. Jeśli to niemożliwe, prosze wprowadzić liczbę naciskając odpowiednie przyciski.");
-
+                        inform.setText("Przy każdej błędnej odpowiedzi zostanie utracona szansa. Liczbę szans można ustalić w opcjach. Proszę zapamiętać podany ciąg i wyrazić gotowość aby przejść dalej.");
                         step=6;
                         break;
                     case 6:
+                        steering=setup(steering);
+                        inform.setText("Proszę wprowadzić zapamiętaną liczbę, tym razem z użyciem wprowadzania głosowego. Jeśli to niemożliwe, prosze wprowadzić liczbę naciskając odpowiednie przyciski.");
+
+                        step=7;
+                        break;
+                    case 7:
 
 
                         if(generated_number.getText().toString().equals("5647")) {
                             steering=setup(steering);
                             inform.setText("Liczba została poprawnie zapamiętana. Gratulacje, udało się pomyślnie zakończyć samouczek. Kliknij w przycisk poniżej aby przejsć do właściwej gry.");
-                            step=7;
+                            step=8;
                             ok.setText("Przejdź do gry");
                             generated_number.setText("");
                         }
@@ -126,12 +131,12 @@ public class Tutorial extends numbers {
                             steering=setup(steering);
 
                             inform.setText("Niestety ciąg został źle podany. Dla przypomnienia, zapamiętywana liczba to ''5647''. Proszę kliknąć w przycisk poniżej i ponownie wpisać liczbę.");
-                            step=5;
+                            step=6;
                             generated_number.setText("");
 
                         }
                         break;
-                    case 7:
+                    case 8:
                         Intent i = new Intent(getBaseContext(), numbers.class);
                         startActivity(i);
                         finish();
@@ -159,7 +164,7 @@ public class Tutorial extends numbers {
             TextView generated_number = (TextView) findViewById(R.id.generated_number);
             if(steering==0)
             {
-                ok.setText("Sprawdź");
+                ok.setText("Dalej");
                 generated_number.setText("");
 
                 ivisibility(false);
@@ -171,10 +176,6 @@ public class Tutorial extends numbers {
             else
             {
                 ok.setText("Gotów");
-                //check(generated_number.getText().toString(),number);
-                //number = intarray2string(random_number(length));
-
-                //generated_number.setText(number);
                 ivisibility(true);
                 steering=0;
                 return steering;
@@ -263,60 +264,65 @@ public class Tutorial extends numbers {
 
 
 
-        protected boolean check(String generated_number, String typed_number)
-        {
-            TextView inform = (TextView) findViewById(R.id.inform);
-            if(generated_number.equals(typed_number)) {
-                length++;
-                //inform.setText("Liczba została poprawnie zapamiętana, oto kolejna:");
-                return true;
+
+
+    protected void ivisibility(boolean off)
+    {
+
+        if(off) {
+            for (int i = 0; i<= 9; i++) {
+                int id = getResources().getIdentifier("b" + i, "id", getPackageName());
+                Button tmp = (Button) findViewById(id);
+                tmp.setVisibility(View.INVISIBLE);
+
             }
-            else
-            {
-               // inform.setText("Liczba nie została poprawnie zapamiętana, oto kolejna:");
-                return false;
-            }
+            Button C = (Button)findViewById(R.id.bC);
+            C.setVisibility(View.INVISIBLE);
+            ImageButton Voice = (ImageButton)findViewById(R.id.bvoice);
+            Voice.setVisibility(View.INVISIBLE);
+            TextView generated_number = (TextView) findViewById(R.id.generated_number);
+            generated_number.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL);
+            Button ok=(Button)findViewById(R.id.ok);
+            RelativeLayout layout = (RelativeLayout) findViewById(R.id.activity_numbers);
+            generated_number.setHeight(500);
+
+
+            RelativeLayout.LayoutParams pok = (RelativeLayout.LayoutParams)ok.getLayoutParams();
+            pok.leftMargin = 0;
+
+            ok.setLayoutParams(pok);
+            RelativeLayout.LayoutParams pgn = (RelativeLayout.LayoutParams)generated_number.getLayoutParams();
+            pgn.bottomMargin = 300;
+
+            generated_number.setLayoutParams(pgn);
         }
+        else {
+            for (int i = 0; i <= 9; i++) {
+                int id = getResources().getIdentifier("b" + i, "id", getPackageName());
+                Button tmp = (Button) findViewById(id);
+                tmp.setVisibility(View.VISIBLE);
 
-
-        protected void ivisibility(boolean off)
-        {
-
-            if(off) {
-                for (int i = 0; i<= 9; i++) {
-                    int id = getResources().getIdentifier("b" + i, "id", getPackageName());
-                    Button tmp = (Button) findViewById(id);
-                    tmp.setVisibility(View.INVISIBLE);
-
-                }
-                Button C = (Button)findViewById(R.id.bC);
-                C.setVisibility(View.INVISIBLE);
-                ImageButton Voice = (ImageButton)findViewById(R.id.bvoice);
-                Voice.setVisibility(View.INVISIBLE);
-                TextView generated_number = (TextView) findViewById(R.id.generated_number);
-                generated_number.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL);
-                Button ok=(Button)findViewById(R.id.ok);
-                //ok.setWidth(FrameLayout.LayoutParams.WRAP_CONTENT);
-                //ok.setWidth(500);
-            }
-            else {
-                for (int i = 0; i <= 9; i++) {
-                    int id = getResources().getIdentifier("b" + i, "id", getPackageName());
-                    Button tmp = (Button) findViewById(id);
-                    tmp.setVisibility(View.VISIBLE);
-
-
-                }
-                Button C = (Button)findViewById(R.id.bC);
-                C.setVisibility(View.VISIBLE);
-                ImageButton Voice = (ImageButton)findViewById(R.id.bvoice);
-                Voice.setVisibility(View.VISIBLE);
-                TextView generated_number = (TextView) findViewById(R.id.generated_number);
-                generated_number.setGravity(Gravity.TOP);
-                Button ok = (Button) findViewById(R.id.ok);
-                // ok.setWidth(120);
 
             }
+            Button C = (Button)findViewById(R.id.bC);
+            C.setVisibility(View.VISIBLE);
+            ImageButton Voice = (ImageButton)findViewById(R.id.bvoice);
+            Voice.setVisibility(View.VISIBLE);
+            TextView generated_number = (TextView) findViewById(R.id.generated_number);
+            generated_number.setGravity(Gravity.TOP);
+            Button ok = (Button) findViewById(R.id.ok);
+            RelativeLayout.LayoutParams pok = (RelativeLayout.LayoutParams)ok.getLayoutParams();
+            RelativeLayout.LayoutParams pvc = (RelativeLayout.LayoutParams)Voice.getLayoutParams();
+            pok.leftMargin = pvc.leftMargin;
+            //p.topMargin = xxx; // in PX
+            ok.setLayoutParams(pok);
+
+            RelativeLayout.LayoutParams pgn = (RelativeLayout.LayoutParams)generated_number.getLayoutParams();
+            pgn.bottomMargin = 600; // in PX
+            //p.topMargin = xxx; // in PX
+            generated_number.setLayoutParams(pgn);
+
         }
+    }
     }
 

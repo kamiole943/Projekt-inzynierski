@@ -12,56 +12,65 @@
     tools:context="com.example.isengrim.project.numbers">
 
 
-    <Button
-        android:id="@+id/bl9"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:text="9"
-        android:layout_alignBaseline="@+id/bl3"
-        android:layout_alignBottom="@+id/bl3"
-        android:layout_toRightOf="@+id/bl6"
-        android:layout_toEndOf="@+id/bl6" />
-
-    <Button
-        android:id="@+id/bl12"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:text="12"
-        android:layout_alignBaseline="@+id/bl9"
-        android:layout_alignBottom="@+id/bl9"
-        android:layout_toRightOf="@+id/bl9"
-        android:layout_toEndOf="@+id/bl9" />
-
-    <Button
-        android:id="@+id/bl20"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:text="20"
-        android:layout_alignBaseline="@+id/bl12"
-        android:layout_alignBottom="@+id/bl12"
-        android:layout_toRightOf="@+id/bl12"
-        android:layout_toEndOf="@+id/bl12" />
-
-    <Button
-        android:id="@+id/bl3"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="16dp"
-        android:text="3"
-        android:layout_below="@+id/textView"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="130dp"
+        android:text="Liczba szans"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bc3"
+        android:layout_marginTop="22dp"
+        android:text="Tryb wprowadzania głosowego"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
     <Button
-        android:id="@+id/bl6"
+        android:id="@+id/bc3"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_alignBaseline="@+id/bl3"
-        android:layout_alignBottom="@+id/bl3"
+        android:layout_alignBaseline="@+id/bc1"
+        android:layout_alignBottom="@+id/bc1"
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@+id/bc2"
+        android:layout_toRightOf="@+id/bc2"
+        android:onClick="click_chance"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/bc1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:onClick="click_chance"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/bc2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/bc1"
+        android:layout_alignBottom="@+id/bc1"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="12dp"
-        android:layout_toEndOf="@+id/bl3"
-        android:layout_toRightOf="@+id/bl3"
-        android:text="6" />
+        android:layout_toEndOf="@+id/bc1"
+        android:layout_toRightOf="@+id/bc1"
+        android:onClick="click_chance"
+        android:text="2" />
 
     <TextView
         android:id="@+id/textView"
@@ -72,7 +81,54 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
         android:text="Początkowa długość ciągu"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <SeekBar
+        android:id="@+id/sbsl"
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="70dp"
+        android:max="49"
+        android:progress="2" />
+
+    <TextView
+        android:id="@+id/tbsl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/brp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:onClick="click_voice"
+        android:text="Zastąp tekst"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/bat"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/brp"
+        android:layout_alignBottom="@+id/brp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="click_voice"
+        android:text="Dodaj do tekstu" />
+
 </RelativeLayout>
