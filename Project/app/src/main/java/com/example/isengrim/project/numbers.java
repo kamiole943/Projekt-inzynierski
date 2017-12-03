@@ -55,7 +55,7 @@ public class numbers extends AppCompatActivity {
     ImageButton bvoice;
     int steering = 0, length, chances=0, voice=0, seconds=0 ,minutes=0, milliseconds=0;
     boolean remembered=false;
-    String number, time[]={"","",""};
+    String number, time[]={"","",""}, Voicenumber;
     Timer timer = new Timer();
 
 
@@ -216,7 +216,7 @@ public class numbers extends AppCompatActivity {
         Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
-        intent.putExtra(RecognizerIntent.EXTRA_PROMPT,"Powiedz liczbę");
+
         try {
             startActivityForResult(intent, 100);
         } catch (ActivityNotFoundException a) {
@@ -234,17 +234,28 @@ public class numbers extends AppCompatActivity {
                     ArrayList<String> result = data
                             .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                     Log.e("result",result.get(0).toString());
-                    if( isValidInteger(result.get(0).toString().replaceAll(" ",""))) {
+                        Voicenumber="";
+                    for(int i=0; i<result.get(0).toString().length();i++)
+                    {
+                        if(isValidInteger(result.get(0).toString().charAt(i)))
+                        {
+                            Voicenumber+=result.get(0).toString().charAt(i);
+                        }
+                    }
+
+                   if(Voicenumber != "")
+                   {
                         if(voice==1)
-                        generated_number.setText(result.get(0).toString().replaceAll(" ",""));
+                        generated_number.setText(Voicenumber);
                         else
                         {
-                            generated_number.append(result.get(0).toString().replaceAll(" ",""));
+                            generated_number.append(Voicenumber);
+
                         }
                     }
                     else
                     {
-                        Toast.makeText(getApplicationContext(),"Liczba nie została poprawnie wypowiedziana",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Ciąg nie został poprawnie wypowiedziany",Toast.LENGTH_SHORT).show();
                     }
                 }
                 break;
@@ -301,13 +312,13 @@ public class numbers extends AppCompatActivity {
 
         }
     }
-    protected static Boolean isValidInteger(String value) {
+    protected static Boolean isValidInteger(Character value) {
         try {
-            Integer val = Integer.valueOf(value);
-            if (val != null)
-                return true;
-            else
-                return false;
+            if(Character.isDigit(value))
+                    return true;
+                else
+                    return false;
+
         } catch (NumberFormatException e) {
             return false;
         }
@@ -316,6 +327,15 @@ public class numbers extends AppCompatActivity {
     protected void ivisibility(boolean off)
     {
 
+
+        float d = getApplicationContext().getResources().getDisplayMetrics().density;
+        TextView generated_number = (TextView) findViewById(R.id.generated_number);
+        ImageButton Voice = (ImageButton)findViewById(R.id.bvoice);
+        Button C = (Button)findViewById(R.id.bC);
+        Button ok = (Button) findViewById(R.id.ok);
+        RelativeLayout.LayoutParams pok = (RelativeLayout.LayoutParams)ok.getLayoutParams();
+        RelativeLayout.LayoutParams pvc = (RelativeLayout.LayoutParams)Voice.getLayoutParams();
+        RelativeLayout.LayoutParams pgn = (RelativeLayout.LayoutParams)generated_number.getLayoutParams();
         if(off) {
             for (int i = 0; i<= 9; i++) {
                 int id = getResources().getIdentifier("b" + i, "id", getPackageName());
@@ -323,24 +343,14 @@ public class numbers extends AppCompatActivity {
                 tmp.setVisibility(View.INVISIBLE);
 
             }
-            Button C = (Button)findViewById(R.id.bC);
+
             C.setVisibility(View.INVISIBLE);
-            ImageButton Voice = (ImageButton)findViewById(R.id.bvoice);
             Voice.setVisibility(View.INVISIBLE);
-            TextView generated_number = (TextView) findViewById(R.id.generated_number);
             generated_number.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL);
-        Button ok=(Button)findViewById(R.id.ok);
-            RelativeLayout layout = (RelativeLayout) findViewById(R.id.activity_numbers);
             generated_number.setHeight(500);
-
-
-            RelativeLayout.LayoutParams pok = (RelativeLayout.LayoutParams)ok.getLayoutParams();
             pok.leftMargin = 0;
-
             ok.setLayoutParams(pok);
-            RelativeLayout.LayoutParams pgn = (RelativeLayout.LayoutParams)generated_number.getLayoutParams();
-            pgn.bottomMargin = 300;
-
+            pgn.bottomMargin = (int)d*150;
             generated_number.setLayoutParams(pgn);
         }
         else {
@@ -351,22 +361,12 @@ public class numbers extends AppCompatActivity {
 
 
             }
-            Button C = (Button)findViewById(R.id.bC);
             C.setVisibility(View.VISIBLE);
-            ImageButton Voice = (ImageButton)findViewById(R.id.bvoice);
             Voice.setVisibility(View.VISIBLE);
-            TextView generated_number = (TextView) findViewById(R.id.generated_number);
             generated_number.setGravity(Gravity.TOP);
-            Button ok = (Button) findViewById(R.id.ok);
-            RelativeLayout.LayoutParams pok = (RelativeLayout.LayoutParams)ok.getLayoutParams();
-            RelativeLayout.LayoutParams pvc = (RelativeLayout.LayoutParams)Voice.getLayoutParams();
             pok.leftMargin = pvc.leftMargin;
-            //p.topMargin = xxx; // in PX
             ok.setLayoutParams(pok);
-
-            RelativeLayout.LayoutParams pgn = (RelativeLayout.LayoutParams)generated_number.getLayoutParams();
-            pgn.bottomMargin = 600; // in PX
-            //p.topMargin = xxx; // in PX
+            pgn.bottomMargin = (int)d*300; // in PX
             generated_number.setLayoutParams(pgn);
 
         }
@@ -378,6 +378,19 @@ public class numbers extends AppCompatActivity {
         String filepath = android.os.Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + filename;
         File file = new File(filepath);
 
+        if (!file.exists())
+        {
+            try {
+                FileWriter writer = new FileWriter(file,true);
+                writer.write("3|");
+                writer.write("3|");
+                writer.write("1");
+                writer.close();
+            }
+            catch (IOException e) {
+                Log.e("Exception", "File write failed: " + e.toString());
+            }
+        }
         // StringBuilder setup = new StringBuilder();
         try {
             //FileReader reader = new FileReader(file);
@@ -387,25 +400,15 @@ public class numbers extends AppCompatActivity {
             StringBuilder setup = new StringBuilder();
             setup.append(reader.readLine());
             //Make sure you close all streams.
-
             fis.close();
-
-
             String[] separated = setup.toString().split("\\|");
-
-
-
             length=Integer.parseInt(separated[0]);
             chances=Integer.parseInt(separated[1]);
             voice=Integer.parseInt(separated[2]);
-
-
         }
         catch (IOException e) {
             Log.e("Exception", "File read failed: " + e.toString());
         }
-
-
     }
 
     public void SaveToCSV(String Data1, String Data2) {
@@ -433,33 +436,8 @@ public class numbers extends AppCompatActivity {
         }
     }
 
-    public boolean ReadFromCSV() {
-        String csv = android.os.Environment.getExternalStorageDirectory().getAbsolutePath();
-        String fileName = "Number_Records.csv";
-        String filePath = csv + File.separator + fileName;
-        File file = new File(filePath);
-        CSVReader reader;
-
-        try {
-            if (file.exists() && !file.isDirectory()) {
-                reader = new CSVReader(new FileReader(filePath), ';');
-            } else {
-
-                return false;
-            }
-
-            List<String[]> list = reader.readAll();
-            reader.close();
-        } catch (Exception e) {
-            Log.i("", "Something went wrong");
-            Log.e("", e.getMessage());
-        }
-    return true;
-    }
 
     public void Timer() {
-
-
         timer = new Timer();
         timer.schedule(new TimerTask() {
             @Override
@@ -471,43 +449,16 @@ public class numbers extends AppCompatActivity {
                      if(milliseconds==100) {
                          seconds ++;
                          if (seconds == 60) {
-
                              minutes ++;
-
                              seconds = 0;
-
                          }
-
                          milliseconds= 0;
-
-
-
                      }
-
                         time[0] = String.format(String.format("%02d", minutes) + ":" + String.format("%02d", seconds)+ "." + String.format("%02d",milliseconds));
-
-
-
-
-
-
-
-
-
-
                     }
                 });
-
             }
         },0,10);
-
-
-
-
-
-
-
     }
-
 
 }

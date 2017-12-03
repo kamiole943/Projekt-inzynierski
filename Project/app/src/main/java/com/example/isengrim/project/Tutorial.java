@@ -32,9 +32,7 @@ import java.util.Random;
 public class Tutorial extends numbers {
 
 
-        Button ok, b1, b2, b3, b4, b5, b6, b7, b8, b9, bC;
-        TextView generated_number, inform;
-        ImageButton bvoice;
+
         int steering = 0;
 
         int step = 0;
@@ -248,12 +246,28 @@ public class Tutorial extends numbers {
                         ArrayList<String> result = data
                                 .getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                         Log.e("result",result.get(0).toString());
-                        if( isValidInteger(result.get(0).toString().replaceAll(" ",""))) {
-                            generated_number.setText(result.get(0).toString().replaceAll(" ",""));
+                            Voicenumber="";
+                        for(int i=0; i<result.get(0).toString().length();i++)
+                        {
+                            if(isValidInteger(result.get(0).toString().charAt(i)))
+                            {
+                                Voicenumber+=result.get(0).toString().charAt(i);
+                            }
+                        }
+
+                        if(Voicenumber != "")
+                        {
+                            if(voice==1)
+                                generated_number.setText(Voicenumber);
+                            else
+                            {
+                                generated_number.append(Voicenumber);
+
+                            }
                         }
                         else
                         {
-                            Toast.makeText(getApplicationContext(),"Liczba nie została poprawnie wypowiedziana",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(),"Ciąg nie został poprawnie wypowiedziany",Toast.LENGTH_SHORT).show();
                         }
                     }
                     break;
