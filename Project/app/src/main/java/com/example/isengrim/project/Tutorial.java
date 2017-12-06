@@ -99,7 +99,7 @@ public class Tutorial extends numbers {
                         step=4;
                         break;
                     case 4:
-                        inform.setText("Jak widać, wygenerowany ciąg cyfr zwiększył się o jedną cyfrę. Tak będzie działo się za każdym razem, gdy zostanie poprawnie zapamiętany poprzedni ciąg.");
+                        inform.setText("Jak widać, wygenerowany ciąg cyfr zwiększył się o jedną cyfrę. Tak będzie się działo  za każdym razem, gdy zostanie poprawnie zapamiętany poprzedni ciąg.");
 
                         generated_number.setText("5647");
                         step=5;
