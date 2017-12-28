@@ -1,7 +1,6 @@
 package com.example.isengrim.project;
 
 import android.content.ActivityNotFoundException;
-import android.content.Context;
 import android.content.Intent;
 import android.speech.RecognizerIntent;
 import android.support.v7.app.AppCompatActivity;
@@ -12,47 +11,32 @@ import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
-import android.widget.TableLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.lang.reflect.Array;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
 import java.util.Locale;
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
 
-public class numbers extends AppCompatActivity {
+public class Numbers extends AppCompatActivity {
 
 
-    Button ok, b1, b2, b3, b4, b5, b6, b7, b8, b9, bC;
-    TextView generated_number, inform;
-    ImageButton bvoice;
     int steering = 0, length, chances=0, voice=0, seconds=0 ,minutes=0, milliseconds=0;
     boolean remembered=false;
     String number, time[]={"","",""}, Voicenumber;
@@ -78,7 +62,7 @@ public class numbers extends AppCompatActivity {
         generated_number.setText(number);
         ivisibility(true);
 
-        inform.setText("Rozgrywka została rozpoczeta. Proszę zapamiętać podaną liczbę.");
+        inform.setText("Rozgrywka została rozpoczeta. Proszę zapamiętać podaną sekwencję cyfr.");
         Timer();
         ok.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,7 +72,7 @@ public class numbers extends AppCompatActivity {
                 {
                     ok.setText("Dalej");
                     generated_number.setText("");
-                    inform.setText("Proszę wpisać zapamiętaną liczbę.");
+                    inform.setText("Proszę wpisać zapamiętany ciąg cyfr.");
                     ivisibility(false);
                     steering=1;
                     time[1]=time[0];
@@ -143,8 +127,6 @@ public class numbers extends AppCompatActivity {
                 }
                 else
                 {
-                    //Intent i = new Intent(getBaseContext(), Menu.class);
-                    //startActivity(i);
                     finish();
                 }
             }

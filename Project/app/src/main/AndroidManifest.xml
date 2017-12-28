@@ -20,7 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".numbers"
+        <activity android:name=".Numbers"
             android:screenOrientation="portrait"/>
         <activity android:name=".Tutorial"
             android:screenOrientation="portrait"/>

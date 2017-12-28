@@ -3,33 +3,28 @@
 package com.example.isengrim.project;
 
 import android.content.ActivityNotFoundException;
-import android.content.Context;
 import android.content.Intent;
 import android.speech.RecognizerIntent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
-import android.view.WindowManager;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.FrameLayout;
+
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.lang.reflect.Array;
+
 import java.util.ArrayList;
-import java.util.Arrays;
+
 import java.util.Locale;
-import java.util.Random;
 
 
-public class Tutorial extends numbers {
+
+public class Tutorial extends Numbers {
 
 
 
@@ -135,7 +130,7 @@ public class Tutorial extends numbers {
                         }
                         break;
                     case 8:
-                        Intent i = new Intent(getBaseContext(), numbers.class);
+                        Intent i = new Intent(getBaseContext(), Numbers.class);
                         startActivity(i);
                         finish();
                         break;
@@ -228,7 +223,6 @@ public class Tutorial extends numbers {
             Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
             intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
             intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
-            intent.putExtra(RecognizerIntent.EXTRA_PROMPT,"Powiedz liczbę");
             try {
                 startActivityForResult(intent, 100);
             } catch (ActivityNotFoundException a) {

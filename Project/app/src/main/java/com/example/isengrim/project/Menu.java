@@ -10,8 +10,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import static java.security.AccessController.getContext;
-
 public class Menu extends AppCompatActivity {
 
     private static final int REQUEST_EXTERNAL_STORAGE = 1;
@@ -29,7 +27,7 @@ public class Menu extends AppCompatActivity {
         Gra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getBaseContext(), numbers.class);
+                Intent i = new Intent(getBaseContext(), Numbers.class);
                 startActivity(i);
             }
 

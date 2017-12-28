@@ -1,0 +1,15 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Praca.aux
+The style file: acm.bst
+Case mismatch error between cite keys Testy and testy
+---line 29 of file Praca.aux
+ : \citation{PsychologiaPamieci,Testy
+ :                                   }
+I'm skipping whatever remains of this command
+Database file #1: Praca.bib
+Too many commas in name 1 of "Budohoska, ~W., W³odarski, ~Z." for entry Wanda
+while executing---line 1092 of file acm.bst
+Too many commas in name 1 of "Budohoska, ~W., W³odarski, ~Z." for entry Wanda
+while executing---line 1133 of file acm.bst
+Warning--empty journal in testy
+Warning--empty journal in Farmakoterapia
+(There were 3 error messages)
