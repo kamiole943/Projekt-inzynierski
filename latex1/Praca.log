@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.5.17)  29 DEC 2017 00:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.5.17)  28 DEC 2017 00:01
 entering extended mode
 **./Praca.tex
 (Praca.tex
@@ -665,167 +665,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11]
 [12]
-Overfull \hbox (10.65701pt too wide) in paragraph at lines 199--202
-[]\OT4/cmr/m/n/12 Klasa ob-sªu-gu-j¡-ca wy-±wie-tle-nie li-sty wy-ni-ków na ekr
-a-nie. W me-to-dzie Re-ad-FromCSV,
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13]
-[14]
 Rozdzia\PlPrIeC {\l } 4.
-<./rysunki/Menuglowne.png, id=313, 722.7pt x 1137.24875pt>
-File: ./rysunki/Menuglowne.png Graphic file (type png)
+[13
 
-<use ./rysunki/Menuglowne.png>
-Package pdftex.def Info: ./rysunki/Menuglowne.png used on input line 212.
-(pdftex.def)             Requested size: 173.45154pt x 272.94528pt.
+] [14
 
-<./rysunki/test2.png, id=320, 722.7pt x 1125.20375pt>
-File: ./rysunki/test2.png Graphic file (type png)
-
-<use ./rysunki/test2.png>
-Package pdftex.def Info: ./rysunki/test2.png used on input line 225.
-(pdftex.def)             Requested size: 173.45154pt x 270.05441pt.
-
-Underfull \vbox (badness 2073) has occurred while \output is active []
-
- [15
-
- <./rysunki/Menuglowne.png (PNG copy)>]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.230 \\ \indent
-                
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[16 <./rysunki/test2.png (PNG copy)>]
-<./rysunki/test4.png, id=340, 722.7pt x 1124.2pt>
-File: ./rysunki/test4.png Graphic file (type png)
- <use ./rysunki/test4.png>
-Package pdftex.def Info: ./rysunki/test4.png used on input line 236.
-(pdftex.def)             Requested size: 173.45154pt x 269.8135pt.
-
-[17 <./rysunki/test4.png (PNG copy)>]
-<./rysunki/test3.png, id=347, 722.7pt x 1134.2375pt>
-File: ./rysunki/test3.png Graphic file (type png)
- <use ./rysunki/test3.png>
-Package pdftex.def Info: ./rysunki/test3.png used on input line 244.
-(pdftex.def)             Requested size: 173.45154pt x 272.22256pt.
-
-<./rysunki/ok1.png, id=348, 722.7pt x 1134.2375pt>
-File: ./rysunki/ok1.png Graphic file (type png)
- <use ./rysunki/ok1.png>
-Package pdftex.def Info: ./rysunki/ok1.png used on input line 252.
-(pdftex.def)             Requested size: 173.45154pt x 272.22256pt.
-
-<./rysunki/bad1.png, id=349, 722.7pt x 1136.245pt>
-File: ./rysunki/bad1.png Graphic file (type png)
- <use ./rysunki/bad1.png>
-Package pdftex.def Info: ./rysunki/bad1.png used on input line 260.
-(pdftex.def)             Requested size: 173.45154pt x 272.70436pt.
-
-[18 <./rysunki/test3.png (PNG copy)> <./rysunki/ok1.png (PNG copy)>]
-<./rysunki/koniec1.png, id=354, 722.7pt x 1134.2375pt>
-File: ./rysunki/koniec1.png Graphic file (type png)
-
-<use ./rysunki/koniec1.png>
-Package pdftex.def Info: ./rysunki/koniec1.png used on input line 268.
-(pdftex.def)             Requested size: 173.45154pt x 272.22256pt.
-
-<./rysunki/voice1.png, id=355, 722.7pt x 1127.21124pt>
-File: ./rysunki/voice1.png Graphic file (type png)
-
-<use ./rysunki/voice1.png>
-Package pdftex.def Info: ./rysunki/voice1.png used on input line 276.
-(pdftex.def)             Requested size: 173.45154pt x 270.53622pt.
- [19 <./rysunki/bad1.png (PNG copy)> <./rysunki/koniec1.png (PNG copy)>] <./rys
-unki/error1.png, id=360, 722.7pt x 1132.23pt>
-File: ./rysunki/error1.png Graphic file (type png)
-
-<use ./rysunki/error1.png>
-Package pdftex.def Info: ./rysunki/error1.png used on input line 284.
-(pdftex.def)             Requested size: 173.45154pt x 271.74075pt.
-
-Overfull \hbox (2.5992pt too wide) in paragraph at lines 291--296
-[]\OT4/cmr/m/n/12 Kolejnym eta-pem jest za-zna-jo-mie-nie u»yt-kow-ni-ka z wpro
--wa-dza-niem gªo-so-wym (Rys.
- []
-
-[20 <./rysunki/voice1.png (PNG copy)> <./rysunki/error1.png (PNG copy)>]
-<./rysunki/tut1.png, id=372, 722.7pt x 1134.2375pt>
-File: ./rysunki/tut1.png Graphic file (type png)
- <use ./rysunki/tut1.png>
-Package pdftex.def Info: ./rysunki/tut1.png used on input line 299.
-(pdftex.def)             Requested size: 173.45154pt x 272.22256pt.
-
-<./rysunki/tut2.png, id=373, 722.7pt x 1131.22626pt>
-File: ./rysunki/tut2.png Graphic file (type png)
- <use ./rysunki/tut2.png>
-Package pdftex.def Info: ./rysunki/tut2.png used on input line 307.
-(pdftex.def)             Requested size: 173.45154pt x 271.49985pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21 <./rysunki/tut1.png (PNG copy)>]
-<./rysunki/tut3.png, id=385, 722.7pt x 1129.21875pt>
-File: ./rysunki/tut3.png Graphic file (type png)
- <use ./rysunki/tut3.png>
-Package pdftex.def Info: ./rysunki/tut3.png used on input line 316.
-(pdftex.def)             Requested size: 173.45154pt x 271.01804pt.
-
-<./rysunki/tut4.png, id=386, 722.7pt x 1125.20375pt>
-File: ./rysunki/tut4.png Graphic file (type png)
- <use ./rysunki/tut4.png>
-Package pdftex.def Info: ./rysunki/tut4.png used on input line 325.
-(pdftex.def)             Requested size: 173.45154pt x 270.05441pt.
-
-[22 <./rysunki/tut2.png (PNG copy)> <./rysunki/tut3.png (PNG copy)>]
-<./rysunki/tut5.png, id=391, 722.7pt x 1131.22626pt>
-File: ./rysunki/tut5.png Graphic file (type png)
- <use ./rysunki/tut5.png>
-Package pdftex.def Info: ./rysunki/tut5.png used on input line 333.
-(pdftex.def)             Requested size: 173.45154pt x 271.49985pt.
-
-<./rysunki/tut6.png, id=392, 722.7pt x 1135.24126pt>
-File: ./rysunki/tut6.png Graphic file (type png)
- <use ./rysunki/tut6.png>
-Package pdftex.def Info: ./rysunki/tut6.png used on input line 341.
-(pdftex.def)             Requested size: 173.45154pt x 272.46347pt.
-
-[23 <./rysunki/tut4.png (PNG copy)> <./rysunki/tut5.png (PNG copy)>] [24 <./rys
-unki/tut6.png (PNG copy)>]
-<./rysunki/options.png, id=402, 722.7pt x 1134.2375pt>
-File: ./rysunki/options.png Graphic file (type png)
-
-<use ./rysunki/options.png>
-Package pdftex.def Info: ./rysunki/options.png used on input line 355.
-(pdftex.def)             Requested size: 173.45154pt x 272.22256pt.
- [25 <./rysunki/options.png (PNG copy)>]
-<./rysunki/results.png, id=408, 722.7pt x 1134.2375pt>
-File: ./rysunki/results.png Graphic file (type png)
-
-<use ./rysunki/results.png>
-Package pdftex.def Info: ./rysunki/results.png used on input line 373.
-(pdftex.def)             Requested size: 173.45154pt x 272.22256pt.
- [26 <./rysunki/results.png (PNG copy)>]
+]
 Rozdzia\PlPrIeC {\l } 5.
-[27
-
-] [28
+[15] [16
 
 ]
 Rozdzia\PlPrIeC {\l } 6.
-) [29] (Praca.bbl [30
+) [17] (Praca.bbl [18
 
 
 ])
@@ -834,7 +685,7 @@ Package caption Warning: Unused \captionsetup[subfigure] on input line 151.
 See the caption package documentation for explanation.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 41.
-[31]
+[19]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
  (Praca.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 41.
@@ -844,10 +695,10 @@ Package rerunfilecheck Info: File `Praca.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 41.
  ) 
 Here is how much of TeX's memory you used:
- 9543 strings out of 493333
- 142121 string characters out of 3136599
- 264313 words of memory out of 3000000
- 12765 multiletter control sequences out of 15000+200000
+ 9408 strings out of 493333
+ 139798 string characters out of 3136599
+ 257313 words of memory out of 3000000
+ 12676 multiletter control sequences out of 15000+200000
  35949 words of font info for 67 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,9n,42p,1531b,374s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -868,9 +719,9 @@ X 2.9/fonts/type1/public/pl/plsl12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 ic/pl/plti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uh
 vb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb
 >
-Output written on Praca.pdf (35 pages, 4148438 bytes).
+Output written on Praca.pdf (23 pages, 651404 bytes).
 PDF statistics:
- 511 PDF objects out of 1000 (max. 8388607)
- 110 named destinations out of 1000 (max. 500000)
- 359 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 397 PDF objects out of 1000 (max. 8388607)
+ 81 named destinations out of 1000 (max. 500000)
+ 274 words of extra memory for PDF output out of 10000 (max. 10000000)
 
