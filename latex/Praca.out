@@ -1,31 +1,31 @@
 \BOOKMARK [0][-]{chapter.1}{Wstep}{}% 1
 \BOOKMARK [0][-]{chapter.2}{Projekt aplikacji}{}% 2
 \BOOKMARK [1][-]{section.2.1}{Za\233ozenia wstepne}{chapter.2}% 3
-\BOOKMARK [1][-]{section.2.2}{Opcjonalne funkcje}{chapter.2}% 4
-\BOOKMARK [1][-]{section.2.3}{Metodologia}{chapter.2}% 5
-\BOOKMARK [0][-]{chapter.3}{Specyfikacja wewnetrzna}{}% 6
-\BOOKMARK [1][-]{section.3.1}{Wprowadzenie}{chapter.3}% 7
-\BOOKMARK [1][-]{section.3.2}{Interfejs uzytkownika}{chapter.3}% 8
-\BOOKMARK [2][-]{subsection.3.2.1}{activity\137menu}{section.3.2}% 9
-\BOOKMARK [2][-]{subsection.3.2.2}{activity\137numbers}{section.3.2}% 10
-\BOOKMARK [2][-]{subsection.3.2.3}{activity\137options}{section.3.2}% 11
-\BOOKMARK [2][-]{subsection.3.2.4}{activity\137results}{section.3.2}% 12
-\BOOKMARK [2][-]{subsection.3.2.5}{list\137row}{section.3.2}% 13
-\BOOKMARK [2][-]{subsection.3.2.6}{frame}{section.3.2}% 14
-\BOOKMARK [2][-]{subsection.3.2.7}{gradient}{section.3.2}% 15
-\BOOKMARK [1][-]{section.3.3}{Klasy i metody}{chapter.3}% 16
-\BOOKMARK [2][-]{subsection.3.3.1}{Menu}{section.3.3}% 17
-\BOOKMARK [2][-]{subsection.3.3.2}{Numbers}{section.3.3}% 18
-\BOOKMARK [2][-]{subsection.3.3.3}{Tutorial}{section.3.3}% 19
-\BOOKMARK [2][-]{subsection.3.3.4}{Options}{section.3.3}% 20
-\BOOKMARK [2][-]{subsection.3.3.5}{Results}{section.3.3}% 21
-\BOOKMARK [2][-]{subsection.3.3.6}{MultirowLVAdapter}{section.3.3}% 22
-\BOOKMARK [0][-]{chapter.4}{Specyfikacja zewnetrzna}{}% 23
-\BOOKMARK [1][-]{section.4.1}{Menu g\233\363wne}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.2}{Rozgrywka}{chapter.4}% 25
-\BOOKMARK [1][-]{section.4.3}{Samouczek}{chapter.4}% 26
-\BOOKMARK [1][-]{section.4.4}{Opcje}{chapter.4}% 27
-\BOOKMARK [1][-]{section.4.5}{Wyniki}{chapter.4}% 28
-\BOOKMARK [0][-]{chapter.5}{Testy}{}% 29
-\BOOKMARK [0][-]{chapter.6}{Podsumowanie i wnioski}{}% 30
-\BOOKMARK [0][-]{chapter.6}{Bibliografia}{}% 31
+\BOOKMARK [2][-]{subsection.2.1.1}{Funkcje opcjonalne}{section.2.1}% 4
+\BOOKMARK [1][-]{section.2.2}{Analiza za\233ozen}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.3}{Specyfikacja wewnetrzna}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.3.1}{Interfejs uzytkownika}{section.2.3}% 7
+\BOOKMARK [3][-]{subsubsection.2.3.1.1}{Widok activity\137menu}{subsection.2.3.1}% 8
+\BOOKMARK [3][-]{subsubsection.2.3.1.2}{Widok activity\137numbers}{subsection.2.3.1}% 9
+\BOOKMARK [3][-]{subsubsection.2.3.1.3}{Widok activity\137options}{subsection.2.3.1}% 10
+\BOOKMARK [3][-]{subsubsection.2.3.1.4}{Widok activity\137results}{subsection.2.3.1}% 11
+\BOOKMARK [3][-]{subsubsection.2.3.1.5}{Widok list\137row}{subsection.2.3.1}% 12
+\BOOKMARK [3][-]{subsubsection.2.3.1.6}{Widok frame}{subsection.2.3.1}% 13
+\BOOKMARK [3][-]{subsubsection.2.3.1.7}{Widok gradient}{subsection.2.3.1}% 14
+\BOOKMARK [2][-]{subsection.2.3.2}{Klasy i metody}{section.2.3}% 15
+\BOOKMARK [3][-]{subsubsection.2.3.2.1}{Menu}{subsection.2.3.2}% 16
+\BOOKMARK [3][-]{subsubsection.2.3.2.2}{Numbers}{subsection.2.3.2}% 17
+\BOOKMARK [3][-]{subsubsection.2.3.2.3}{Tutorial}{subsection.2.3.2}% 18
+\BOOKMARK [3][-]{subsubsection.2.3.2.4}{Options}{subsection.2.3.2}% 19
+\BOOKMARK [3][-]{subsubsection.2.3.2.5}{Results}{subsection.2.3.2}% 20
+\BOOKMARK [3][-]{subsubsection.2.3.2.6}{MultirowLVAdapter}{subsection.2.3.2}% 21
+\BOOKMARK [0][-]{chapter.3}{Instrukcja uzytkownika}{}% 22
+\BOOKMARK [1][-]{section.3.1}{Menu g\233\363wne}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.2}{Rozgrywka}{chapter.3}% 24
+\BOOKMARK [2][-]{subsection.3.2.1}{Odtwarzanie ciagu}{section.3.2}% 25
+\BOOKMARK [1][-]{section.3.3}{Samouczek}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.4}{Opcje}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.5}{Wyniki}{chapter.3}% 28
+\BOOKMARK [0][-]{chapter.4}{Testy}{}% 29
+\BOOKMARK [0][-]{chapter.5}{Podsumowanie i wnioski}{}% 30
+\BOOKMARK [0][-]{chapter.5}{Bibliografia}{}% 31
