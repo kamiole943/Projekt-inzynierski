@@ -6,7 +6,7 @@
 \newblock Wydawnictwa Szkolne i Pedagogiczne, Warszawa, 1998.
 
 \bibitem{Wanda}
-{\sc Budohoska, W., W.~Z.}
+{\sc Budohoska, W. &&~W³odarski, Z.}
 \newblock {\em {Psychologia uczenia siê}}.
 \newblock Przegl¹d badañ eksperymentalnych i teorii. Pañstwowe Wydawnictwo
   Naukowe, Warszawa, 1977.
@@ -28,7 +28,8 @@
 
 \bibitem{testy}
 {\sc NiedŸwieñska, A.}
-\newblock {Rodzaje testów do badania pamiêci}.
+\newblock {\em {Rodzaje testów do badania pamiêci}}.
+\newblock Instytut Psychologii, Uniwersytet Jagielloñski, Kraków, 1999.
 
 \bibitem{AS}
 {\sc Stasiewicz, A.}
@@ -37,6 +38,7 @@
 
 \bibitem{Farmakoterapia}
 {\sc Vetulani, J.}
-\newblock {Pamiêæ: podstawy neurobiologiczne i mo¿liwoœci wspomagania}.
+\newblock {\em {Pamiêæ: podstawy neurobiologiczne i mo¿liwoœci wspomagania}}.
+\newblock Instytut Farmakologii PAN, Kraków, 2006.
 
 \end{thebibliography}

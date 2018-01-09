@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.5.17)  9 JAN 2018 00:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.5.17)  10 JAN 2018 00:01
 entering extended mode
 **./Praca.tex
 (Praca.tex
@@ -513,142 +513,104 @@ Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count172
-LaTeX Font Info:    Try loading font information for T1+phv on input line 17.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
-File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
-)
-<./rysunki/logoPS.png, id=126, 354.6048pt x 354.8457pt>
-File: ./rysunki/logoPS.png Graphic file (type png)
-
-<use ./rysunki/logoPS.png>
-Package pdftex.def Info: ./rysunki/logoPS.png used on input line 17.
-(pdftex.def)             Requested size: 79.66771pt x 79.71771pt.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 17.
-LaTeX Font Info:    Font shape `T1/phv/bx/sc' in size <17> not available
-(Font)              Font shape `T1/phv/b/sc' tried instead on input line 17.
-LaTeX Font Info:    Try loading font information for OML+plm on input line 17.
+ (Praca.toc
+LaTeX Font Info:    Try loading font information for OML+plm on input line 1.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\polski\omlplm.fd"
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMS+plsy on input line 17.
-
+LaTeX Font Info:    Try loading font information for OMS+plsy on input line 1.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\polski\omsplsy.fd"
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMX+plex on input line 17.
-
+LaTeX Font Info:    Try loading font information for OMX+plex on input line 1.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\polski\omxplex.fd"
 File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 17.
+(Font)              <12> on input line 1.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 17.
+(Font)              <8> on input line 1.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 17.
-LaTeX Font Info:    Try loading font information for U+msa on input line 17.
+(Font)              <6> on input line 1.
+LaTeX Font Info:    Try loading font information for U+msa on input line 1.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 17.
+LaTeX Font Info:    Try loading font information for U+msb on input line 1.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Overfull \hbox (71.30833pt too wide) in paragraph at lines 17--17
-[]|  []
- []
+) [1
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--17
-
- []
-
-[1
-
-{C:/Users/Isengrim/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./rysunk
-i/logoPS.png>] [2
-
-] (Praca.toc [1
 
 
-])
+{C:/Users/Isengrim/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
 \tf@toc=\write4
 \openout4 = `Praca.toc'.
 
  [2] (Rozdzialy.tex
 Rozdzia\PlPrIeC {\l } 1.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <10> on input line 19.
+(Font)              <10> on input line 18.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <7> on input line 19.
+(Font)              <7> on input line 18.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <5> on input line 19.
+(Font)              <5> on input line 18.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.25 \begin{itemize}
-                     [1
+ [1
 
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.33 \chapter
-             {Projekt aplikacji}\label{projektaplikacji} [2]
+]
+[2]
 Rozdzia\PlPrIeC {\l } 2.
 
-Overfull \hbox (0.6158pt too wide) in paragraph at lines 36--39
+Overfull \hbox (0.6158pt too wide) in paragraph at lines 33--36
 []\OT4/cmr/m/n/12 Zgodnie z za-ªo-»e-nia-mi po-cz¡t-ko-wy-mi, opra-co-wa-na apl
 i-ka-cja mo-bil-na po-win-na umo»-
  []
 
-[3
-
-] [4] <./rysunki/Schemat.png, id=241, 435.12563pt x 657.95813pt>
+<./rysunki/Schemat.png, id=212, 435.12563pt x 657.95813pt>
 File: ./rysunki/Schemat.png Graphic file (type png)
 
 <use ./rysunki/Schemat.png>
-Package pdftex.def Info: ./rysunki/Schemat.png used on input line 73.
-(pdftex.def)             Requested size: 304.58586pt x 460.56755pt.
- [5 <./rysunki/Schemat.png>] [6]
-<./rysunki/amenu.png, id=261, 530.73282pt x 447.92343pt>
+Package pdftex.def Info: ./rysunki/Schemat.png used on input line 60.
+(pdftex.def)             Requested size: 230.61548pt x 348.71616pt.
+ [3
+
+] [4 <./rysunki/Schemat.png>] [5] [6]
+<./rysunki/amenu.png, id=250, 530.73282pt x 447.92343pt>
 File: ./rysunki/amenu.png Graphic file (type png)
 
 <use ./rysunki/amenu.png>
-Package pdftex.def Info: ./rysunki/amenu.png used on input line 113.
+Package pdftex.def Info: ./rysunki/amenu.png used on input line 112.
 (pdftex.def)             Requested size: 265.36575pt x 223.96117pt.
  [7 <./rysunki/amenu.png>]
-<./rysunki/anumbers.png, id=270, 541.27219pt x 462.22687pt>
+<./rysunki/anumbers.png, id=259, 541.27219pt x 462.22687pt>
 File: ./rysunki/anumbers.png Graphic file (type png)
 
 <use ./rysunki/anumbers.png>
-Package pdftex.def Info: ./rysunki/anumbers.png used on input line 128.
+Package pdftex.def Info: ./rysunki/anumbers.png used on input line 127.
 (pdftex.def)             Requested size: 324.76581pt x 277.33826pt.
  [8 <./rysunki/anumbers.png>]
-<./rysunki/aoptions.png, id=278, 539.01375pt x 454.69875pt>
+<./rysunki/aoptions.png, id=267, 539.01375pt x 454.69875pt>
 File: ./rysunki/aoptions.png Graphic file (type png)
 
 <use ./rysunki/aoptions.png>
-Package pdftex.def Info: ./rysunki/aoptions.png used on input line 139.
+Package pdftex.def Info: ./rysunki/aoptions.png used on input line 138.
 (pdftex.def)             Requested size: 269.50621pt x 227.34882pt.
 
-<./rysunki/aresults.png, id=281, 548.0475pt x 455.45157pt>
+<./rysunki/aresults.png, id=270, 548.0475pt x 455.45157pt>
 File: ./rysunki/aresults.png Graphic file (type png)
 
 <use ./rysunki/aresults.png>
-Package pdftex.def Info: ./rysunki/aresults.png used on input line 152.
+Package pdftex.def Info: ./rysunki/aresults.png used on input line 151.
 (pdftex.def)             Requested size: 274.02307pt x 227.72522pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -657,23 +619,23 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latin2.def"
 File: latin2.def 2015/03/17 v1.2c Input encoding file
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 185.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 184.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 185.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 184.
  [11]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 206.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 205.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 206.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 205.
 
 
 ! LaTeX Error: There's no line here to end.
@@ -682,7 +644,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.228 \\ \indent
+l.227 \\ \indent
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -698,7 +660,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.240 \\ \indent
+l.239 \\ \indent
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -710,7 +672,7 @@ File: latin2.def 2015/03/17 v1.2c Input encoding file
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latin2.def"
 File: latin2.def 2015/03/17 v1.2c Input encoding file
 )
-Overfull \hbox (1.40065pt too wide) in paragraph at lines 287--290
+Overfull \hbox (1.40065pt too wide) in paragraph at lines 286--289
 []\OT4/cmr/m/n/12 Sama ob-sªu-ga wpro-wa-dza-nia gªo-so-we-go jest za-im-ple-me
 n-to-wa-na w me-to-dach \OT4/cmr/m/it/12 prompt-
  []
@@ -719,30 +681,30 @@ n-to-wa-na w me-to-dach \OT4/cmr/m/it/12 prompt-
 File: latin2.def 2015/03/17 v1.2c Input encoding file
 ) [14]
 [15]
-Overfull \hbox (8.8335pt too wide) in paragraph at lines 360--363
+Overfull \hbox (8.8335pt too wide) in paragraph at lines 359--362
 []\OT4/cmr/m/n/12 Klasa ob-sªu-gu-j¡-ca wy-±wie-tle-nie li-sty wy-ni-ków na ekr
 a-nie. W me-to-dzie \OT4/cmr/m/it/12 Re-ad-FromCSV\OT4/cmr/m/n/12 ,
  []
 
 [16]
 Rozdzia\PlPrIeC {\l } 3.
-<./rysunki/Menuglowne.png, id=464, 722.7pt x 1137.24875pt>
+<./rysunki/Menuglowne.png, id=452, 722.7pt x 1137.24875pt>
 File: ./rysunki/Menuglowne.png Graphic file (type png)
 
 <use ./rysunki/Menuglowne.png>
-Package pdftex.def Info: ./rysunki/Menuglowne.png used on input line 372.
+Package pdftex.def Info: ./rysunki/Menuglowne.png used on input line 371.
 (pdftex.def)             Requested size: 173.45154pt x 272.94528pt.
 
-Overfull \hbox (0.25339pt too wide) in paragraph at lines 369--377
+Overfull \hbox (0.25339pt too wide) in paragraph at lines 368--376
 []\OT4/cmr/m/n/12 Po uru-cho-mie-niu apli-ka-cji u»yt-kow-ni-ko-wi wy-±wie-tla-
 ne jest in-te-rak-tyw-ne me-nu gªów-
  []
 
-<./rysunki/test2.png, id=470, 722.7pt x 1125.20375pt>
+<./rysunki/test2.png, id=458, 722.7pt x 1125.20375pt>
 File: ./rysunki/test2.png Graphic file (type png)
 
 <use ./rysunki/test2.png>
-Package pdftex.def Info: ./rysunki/test2.png used on input line 386.
+Package pdftex.def Info: ./rysunki/test2.png used on input line 385.
 (pdftex.def)             Requested size: 173.45154pt x 270.05441pt.
 
 Underfull \vbox (badness 6592) has occurred while \output is active []
@@ -757,7 +719,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.391 \\ \indent
+l.390 \\ \indent
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -766,127 +728,127 @@ or  <return>  to continue without it.
 
 Underfull \vbox (badness 2452) has occurred while \output is active []
 
- [18 <./rysunki/test2.png (PNG copy)>] <./rysunki/test4.png, id=488, 722.7pt x 
+ [18 <./rysunki/test2.png (PNG copy)>] <./rysunki/test4.png, id=477, 722.7pt x 
 1124.2pt>
 File: ./rysunki/test4.png Graphic file (type png)
 
 <use ./rysunki/test4.png>
-Package pdftex.def Info: ./rysunki/test4.png used on input line 396.
+Package pdftex.def Info: ./rysunki/test4.png used on input line 395.
 (pdftex.def)             Requested size: 173.45154pt x 269.8135pt.
  [19 <./rysunki/test4.png (PNG copy)>]
-<./rysunki/ok1.png, id=495, 722.7pt x 1134.2375pt>
+<./rysunki/ok1.png, id=484, 722.7pt x 1134.2375pt>
 File: ./rysunki/ok1.png Graphic file (type png)
  <use ./rysunki/ok1.png>
-Package pdftex.def Info: ./rysunki/ok1.png used on input line 405.
+Package pdftex.def Info: ./rysunki/ok1.png used on input line 404.
 (pdftex.def)             Requested size: 173.45154pt x 272.22256pt.
 
-<./rysunki/bad1.png, id=496, 722.7pt x 1136.245pt>
+<./rysunki/bad1.png, id=485, 722.7pt x 1136.245pt>
 File: ./rysunki/bad1.png Graphic file (type png)
  <use ./rysunki/bad1.png>
-Package pdftex.def Info: ./rysunki/bad1.png used on input line 413.
+Package pdftex.def Info: ./rysunki/bad1.png used on input line 412.
 (pdftex.def)             Requested size: 173.45154pt x 272.70436pt.
 
-<./rysunki/koniec1.png, id=497, 722.7pt x 1134.2375pt>
+<./rysunki/koniec1.png, id=486, 722.7pt x 1134.2375pt>
 File: ./rysunki/koniec1.png Graphic file (type png)
 
 <use ./rysunki/koniec1.png>
-Package pdftex.def Info: ./rysunki/koniec1.png used on input line 421.
+Package pdftex.def Info: ./rysunki/koniec1.png used on input line 420.
 (pdftex.def)             Requested size: 173.45154pt x 272.22256pt.
  [20 <./rysunki/ok1.png (PNG copy)> <./rysunki/bad1.png (PNG copy)>] <./rysunki
-/voice1.png, id=502, 722.7pt x 1127.21124pt>
+/voice1.png, id=491, 722.7pt x 1127.21124pt>
 File: ./rysunki/voice1.png Graphic file (type png)
 
 <use ./rysunki/voice1.png>
-Package pdftex.def Info: ./rysunki/voice1.png used on input line 429.
+Package pdftex.def Info: ./rysunki/voice1.png used on input line 428.
 (pdftex.def)             Requested size: 173.45154pt x 270.53622pt.
 
-<./rysunki/error2.png, id=503, 722.7pt x 300.12125pt>
+<./rysunki/error2.png, id=492, 722.7pt x 300.12125pt>
 File: ./rysunki/error2.png Graphic file (type png)
 
 <use ./rysunki/error2.png>
-Package pdftex.def Info: ./rysunki/error2.png used on input line 437.
+Package pdftex.def Info: ./rysunki/error2.png used on input line 436.
 (pdftex.def)             Requested size: 173.45154pt x 72.03056pt.
  [21 <./rysunki/koniec1.png (PNG copy)> <./rysunki/voice1.png (PNG copy)>] <./r
-ysunki/tut1.png, id=510, 722.7pt x 1134.2375pt>
+ysunki/tut1.png, id=498, 722.7pt x 1134.2375pt>
 File: ./rysunki/tut1.png Graphic file (type png)
 
 <use ./rysunki/tut1.png>
-Package pdftex.def Info: ./rysunki/tut1.png used on input line 447.
+Package pdftex.def Info: ./rysunki/tut1.png used on input line 446.
 (pdftex.def)             Requested size: 173.45154pt x 272.22256pt.
  [22 <./rysunki/error2.png (PNG copy)> <./rysunki/tut1.png (PNG copy)>] <./rysu
-nki/options.png, id=518, 722.7pt x 1134.2375pt>
+nki/options.png, id=506, 722.7pt x 1134.2375pt>
 File: ./rysunki/options.png Graphic file (type png)
 
 <use ./rysunki/options.png>
-Package pdftex.def Info: ./rysunki/options.png used on input line 466.
+Package pdftex.def Info: ./rysunki/options.png used on input line 465.
 (pdftex.def)             Requested size: 173.45154pt x 272.22256pt.
  [23 <./rysunki/options.png (PNG copy)>]
-<./rysunki/results.png, id=528, 722.7pt x 1134.2375pt>
+<./rysunki/results.png, id=517, 722.7pt x 1134.2375pt>
 File: ./rysunki/results.png Graphic file (type png)
 
 <use ./rysunki/results.png>
-Package pdftex.def Info: ./rysunki/results.png used on input line 483.
+Package pdftex.def Info: ./rysunki/results.png used on input line 482.
 (pdftex.def)             Requested size: 173.45154pt x 272.22256pt.
  [24 <./rysunki/results.png (PNG copy)>]
 Rozdzia\PlPrIeC {\l } 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--522
-[]\OT4/cmr/m/n/10 ‘r. czas
+Underfull \hbox (badness 10000) in paragraph at lines 510--512
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--522
-\OT4/cmr/m/n/10 za-pa-mi¦-ty-
+Underfull \hbox (badness 10000) in paragraph at lines 519--519
+[]\OT4/cmr/m/n/10 Zadeklarowana
  []
 
 
-Underfull \hbox (badness 1226) in paragraph at lines 522--522
-[]\OT4/cmr/m/n/10 Std. cza-su
+Underfull \hbox (badness 5147) in paragraph at lines 519--519
+[]\OT4/cmr/m/n/10 Dª. za-pa-mi¦-ta-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--522
-\OT4/cmr/m/n/10 za-pa-mi¦-ty-
+Underfull \hbox (badness 10000) in paragraph at lines 540--540
+[]\OT4/cmr/m/n/10 Zadeklarowana
  []
 
 
-Underfull \hbox (badness 7116) in paragraph at lines 522--522
-[]\OT4/cmr/m/n/10 Min. dªu-
+Underfull \hbox (badness 5147) in paragraph at lines 540--540
+[]\OT4/cmr/m/n/10 Dª. za-pa-mi¦-ta-
  []
 
 
-Underfull \hbox (badness 2662) in paragraph at lines 522--522
-[]\OT4/cmr/m/n/10 Max. dªu-
+Underfull \hbox (badness 1810) in paragraph at lines 558--558
+[]\OT4/cmr/m/n/10 Nie tre-nu-j¡-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 523--523
-\OT4/cmr/m/n/10 tre-nu-j¡-cy
+Underfull \hbox (badness 10000) in paragraph at lines 559--559
+[]\OT4/cmr/m/n/10 Trenuj¡ca
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 526--526
-[]\OT4/cmr/m/n/10 Wiek po-
+Overfull \hbox (6.55806pt too wide) in paragraph at lines 553--562
+ [][] 
  []
 
 
-Underfull \hbox (badness 1303) in paragraph at lines 526--526
-\OT4/cmr/m/n/10 po-ni-»ej 35
+Underfull \hbox (badness 10000) in paragraph at lines 574--574
+[]\OT4/cmr/m/n/10 Poni»ej 18
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 527--527
-[]\OT4/cmr/m/n/10 Wiek po-
+Underfull \hbox (badness 10000) in paragraph at lines 575--575
+[]\OT4/cmr/m/n/10 Powy»ej 18
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 527--527
-\OT4/cmr/m/n/10 wy-»ej 35
+Underfull \hbox (badness 10000) in paragraph at lines 576--576
+[]\OT4/cmr/m/n/10 Powy»ej 35
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 534--541
-
+Overfull \hbox (6.55806pt too wide) in paragraph at lines 571--578
+ [][] 
  []
 
 [25
@@ -898,7 +860,28 @@ Rozdzia\PlPrIeC {\l } 5.
 ] (Praca.bbl [28
 
 
-])
+]
+! Misplaced alignment tab character &.
+l.9 {\sc Budohoska, W. &
+                        &~W³odarski, Z.}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.9 {\sc Budohoska, W. &&
+                         ~W³odarski, Z.}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+)
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 151.
 See the caption package documentation for explanation.
@@ -914,35 +897,33 @@ Package rerunfilecheck Info: File `Praca.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 41.
  ) 
 Here is how much of TeX's memory you used:
- 10128 strings out of 493333
- 149107 string characters out of 3136599
+ 10067 strings out of 493333
+ 148277 string characters out of 3136599
  283313 words of memory out of 3000000
- 13204 multiletter control sequences out of 15000+200000
- 36442 words of font info for 68 fonts, out of 3000000 for 9000
+ 13153 multiletter control sequences out of 15000+200000
+ 19968 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,11n,42p,1184b,2251s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,10n,42p,1184b,2251s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/pl/plsc.enc}{C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/enc/dvips/pl/plit.enc}{C:/Program Files (x86)/MiKTeX
  2.9/fonts/enc/dvips/pl/plrm.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/d
 vips/pl/plms.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/pl/plmi.enc
-}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/pl/plbx10.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/pl/plbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
-type1/public/pl/plcsc10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
-ic/pl/plmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/plr10
-.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/plr12.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/plr7.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/pl/plr8.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/pl/plsl10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
-e1/public/pl/plsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/p
-l/plti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/plti12.pf
-b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Praca.pdf (33 pages, 2816077 bytes).
+}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/plbx10.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/pl/plbx12.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/pl/plcsc10.pfb><C:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/public/pl/plmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/public/pl/plr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/p
+lr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/plr7.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/plr8.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/pl/plsl10.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/pl/plsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/public/pl/plti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
+lic/pl/plti12.pfb>
+Output written on Praca.pdf (31 pages, 2575729 bytes).
 PDF statistics:
- 675 PDF objects out of 1000 (max. 8388607)
- 243 named destinations out of 1000 (max. 500000)
- 334 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 663 PDF objects out of 1000 (max. 8388607)
+ 245 named destinations out of 1000 (max. 500000)
+ 329 words of extra memory for PDF output out of 10000 (max. 10000000)
 
